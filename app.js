@@ -1,7 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const songs = require("./data/songs");
 
 const app = express();
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("サカナクションAPI起動中");

@@ -7,6 +7,8 @@ app.get("/", (req, res) => {
   res.send("サカナクションAPI起動中");
 });
 
+app.use(express.static("public"));
+
 app.get("/api/songs", (req, res) => {
   res.json(songs);
 });

@@ -45,6 +45,8 @@ app.get("/api/albums/:album", (req, res) => {
   res.json(result);
 });
 
-app.listen(3000, () => {
-  console.log("Server Start");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server Start ${PORT}`);
 });

@@ -1,8 +1,6 @@
-const BASE_URL =
-    "https://sakanaction-api.onrender.com";
+const BASE_URL ="https://sakanaction-api.onrender.com";
 
-const API_URL =
-    `${BASE_URL}/api/songs`;
+const API_URL =`${BASE_URL}/api/songs`;
 
 let songs = [];
 
@@ -62,7 +60,7 @@ function renderSongs(data) {
     ${song.image
             ? `
       <img
-        src="${BASE_URL}${song.image}"
+        src="${song.image}"
         alt="${song.title}"
       >
       `

@@ -94,7 +94,7 @@ GET /api/songs
   {
     "id": 1,
     "title": "新宝島",
-    "album": "834.194"
+    "album": "supabase-URL"
   }
 ]
 ```
@@ -176,7 +176,6 @@ fetch("http://localhost:3000/api/songs")
 ## 今後追加したい機能
 
 - アーティスト検索
-- ジャンル検索
 - ページネーション
 - ソート機能
 - SwaggerによるAPIドキュメント
